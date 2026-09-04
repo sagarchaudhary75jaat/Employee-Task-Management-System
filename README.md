@@ -5,23 +5,25 @@
 </p>
 
 <p align="center">
-  A modern and intuitive platform to manage employees, assign tasks,
-  track progress, monitor deadlines, and improve team productivity.
+  A modern web-based platform for managing employees, assigning tasks,
+  tracking progress, monitoring deadlines, and improving team productivity.
 </p>
 
 ---
 
 ## 📌 About The Project
 
-**Employee Task Management System** is a web-based application designed to simplify employee and task management within an organization.
+**Employee Task Management System** is a full-stack web application developed using **React.js, Spring Boot, and PostgreSQL**.
 
-The system provides a centralized platform where administrators and managers can manage employees, create and assign tasks, monitor task progress, set priorities, and track deadlines.
+The system provides a centralized platform for organizations to manage employees and their assigned tasks efficiently.
+
+Administrators and managers can create tasks, assign them to employees, set priorities and deadlines, and monitor task progress. Employees can view their assigned tasks and update their task status.
 
 ### 🎯 Project Goal
 
 > **Plan → Assign → Track → Complete → Improve**
 
-The main goal of this project is to reduce manual task management, improve team collaboration, and provide better visibility into employee workloads and productivity.
+The main objective of this project is to simplify task management, improve employee productivity, reduce manual work, and provide better visibility into organizational tasks.
 
 ---
 
@@ -34,7 +36,7 @@ The main goal of this project is to reduce manual task management, improve team 
 ### 👨‍💼 Employee Management
 
 * ➕ Add employees
-* ✏️ Edit employee information
+* ✏️ Update employee information
 * 👁️ View employee profiles
 * 🗑️ Delete employees
 * 🔎 Search employees
@@ -63,7 +65,7 @@ The main goal of this project is to reduce manual task management, improve team 
 
 ### 🎯 Task Priority
 
-Tasks can be organized according to their importance:
+Tasks can be organized according to priority:
 
 * 🔴 **High**
 * 🟠 **Medium**
@@ -103,7 +105,7 @@ Track tasks through different stages:
 
 ### 📈 Dashboard
 
-Get an overview of:
+Get a quick overview of:
 
 * 👨‍💼 Total employees
 * 📋 Total tasks
@@ -120,12 +122,12 @@ Get an overview of:
 
 # 🖥️ Application Screenshots
 
-> 📸 Add your project screenshots inside the `screenshots` folder.
+> 📸 Add your actual screenshots to the `screenshots` folder.
 
 ### 📊 Dashboard
 
 <p align="center">
-  <img src="screenshots/dashboard.png" width="90%" alt="Dashboard">
+  <img src="screenshots/dashboard.png" width="90%" alt="Employee Task Management Dashboard">
 </p>
 
 ### 📋 Task Management
@@ -150,31 +152,56 @@ Get an overview of:
 
 # 🛠️ Technology Stack
 
-### Frontend
+## 🎨 Frontend
 
-* HTML5
-* CSS3
-* JavaScript
-* Responsive UI
+<p align="left">
+  <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</p>
 
-### Backend
+### Frontend Technologies
 
-* Node.js
-* Express.js
-* REST API
+* **React.js** — Component-based UI development
+* **JavaScript** — Application logic
+* **HTML5** — Page structure
+* **CSS3** — Styling and responsive design
+* **Axios** — API communication
 
-### Database
+---
 
-* MongoDB
+## ⚙️ Backend
 
-### Development Tools
+<p align="left">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/Spring%20Data%20JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Data JPA">
+</p>
 
-* Git
-* GitHub
-* VS Code
-* Postman
+### Backend Technologies
 
-> ⚠️ If your project uses a different technology stack, replace this section with your actual technologies.
+* **Java**
+* **Spring Boot**
+* **Spring Web / REST API**
+* **Spring Data JPA**
+* **Hibernate**
+* **Maven**
+
+---
+
+## 🗄️ Database
+
+<p align="left">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+</p>
+
+### Database Technologies
+
+* **PostgreSQL**
+* Relational database design
+* SQL
+* JPA/Hibernate ORM
 
 ---
 
@@ -184,35 +211,30 @@ Get an overview of:
                          👤 USER
                            │
                            ▼
-                  ┌──────────────────┐
-                  │   🌐 FRONTEND    │
-                  │   Web Interface  │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │    🔐 AUTH       │
-                  │ Authentication   │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │    🔌 BACKEND    │
-                  │     REST API     │
-                  └────────┬─────────┘
-                           │
-              ┌────────────┴────────────┐
-              │                         │
-              ▼                         ▼
-      ┌───────────────┐        ┌────────────────┐
-      │ 👨‍💼 EMPLOYEES │        │ 📋 TASKS       │
-      └───────────────┘        └───────┬────────┘
-                                       │
-                                       ▼
-                              ┌────────────────┐
-                              │ 🗄️ DATABASE    │
-                              │    MongoDB     │
-                              └────────────────┘
+                ┌────────────────────┐
+                │    ⚛️ REACT.JS     │
+                │     FRONTEND       │
+                └─────────┬──────────┘
+                          │
+                          │ REST API
+                          │ HTTP / JSON
+                          ▼
+                ┌────────────────────┐
+                │  🌱 SPRING BOOT    │
+                │      BACKEND       │
+                ├────────────────────┤
+                │  REST Controllers  │
+                │  Services          │
+                │  Repositories      │
+                │  JPA / Hibernate   │
+                └─────────┬──────────┘
+                          │
+                          │ SQL
+                          ▼
+                ┌────────────────────┐
+                │ 🐘 POSTGRESQL      │
+                │     DATABASE       │
+                └────────────────────┘
 ```
 
 ---
@@ -223,21 +245,34 @@ Get an overview of:
 employee-task-management-system/
 │
 ├── 📁 frontend/
-│   ├── 📁 components/
-│   ├── 📁 pages/
-│   ├── 📁 services/
-│   ├── 📁 assets/
-│   └── 📄 App.js
+│   ├── 📁 public/
+│   └── 📁 src/
+│       ├── 📁 components/
+│       ├── 📁 pages/
+│       ├── 📁 services/
+│       ├── 📁 hooks/
+│       ├── 📁 assets/
+│       ├── 📄 App.jsx
+│       └── 📄 main.jsx
 │
 ├── 📁 backend/
-│   ├── 📁 controllers/
-│   ├── 📁 models/
-│   ├── 📁 routes/
-│   ├── 📁 middleware/
-│   ├── 📁 services/
-│   └── 📄 server.js
-│
-├── 📁 database/
+│   ├── 📁 src/
+│   │   ├── 📁 main/
+│   │   │   ├── 📁 java/
+│   │   │   │   └── 📁 com/example/
+│   │   │   │       ├── 📁 controller/
+│   │   │   │       ├── 📁 service/
+│   │   │   │       ├── 📁 repository/
+│   │   │   │       ├── 📁 entity/
+│   │   │   │       ├── 📁 dto/
+│   │   │   │       └── 📄 Application.java
+│   │   │   │
+│   │   │   └── 📁 resources/
+│   │   │       └── 📄 application.properties
+│   │   │
+│   │   └── 📁 test/
+│   │
+│   └── 📄 pom.xml
 │
 ├── 📁 screenshots/
 │   ├── dashboard.png
@@ -245,146 +280,101 @@ employee-task-management-system/
 │   ├── employees.png
 │   └── task-details.png
 │
-├── 📄 .env.example
 ├── 📄 .gitignore
-├── 📄 package.json
 └── 📄 README.md
 ```
 
 ---
 
-# 🚀 Getting Started
-
-Follow the steps below to run the project locally.
-
-## 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/employee-task-management-system.git
-```
-
-## 2️⃣ Navigate to the Project
-
-```bash
-cd employee-task-management-system
-```
-
-## 3️⃣ Install Dependencies
-
-```bash
-npm install
-```
-
-## 4️⃣ Configure Environment Variables
-
-Create a `.env` file in the root directory.
-
-```env
-PORT=5000
-DATABASE_URL=your_database_url
-JWT_SECRET=your_secret_key
-```
-
-> 🔒 Never upload your `.env` file to GitHub.
-
-## 5️⃣ Start the Application
-
-```bash
-npm run dev
-```
-
-For a production start:
-
-```bash
-npm start
-```
-
-The application will normally be available at:
+# 🔄 Application Workflow
 
 ```text
-http://localhost:3000
+             👤 LOGIN
+                │
+                ▼
+        ┌───────────────┐
+        │  📊 DASHBOARD │
+        └───────┬───────┘
+                │
+       ┌────────┴────────┐
+       │                 │
+       ▼                 ▼
+ 👨‍💼 EMPLOYEES       📋 TASKS
+       │                 │
+       │                 ▼
+       │          📝 CREATE TASK
+       │                 │
+       │                 ▼
+       │           📌 ASSIGN TASK
+       │                 │
+       │                 ▼
+       │          🔵 IN PROGRESS
+       │                 │
+       │                 ▼
+       │            🟡 REVIEW
+       │                 │
+       │                 ▼
+       │           🟢 COMPLETED
+       │
+       ▼
+  👤 EMPLOYEE
+     PROFILE
 ```
 
 ---
 
 # 👥 User Roles
 
-|        Role        | Access                            |
+|        Role        | Permissions                       |
 | :----------------: | --------------------------------- |
-|    👑 **Admin**    | Complete access to the system     |
+|    👑 **Admin**    | Full system access                |
 |  🧑‍💼 **Manager** | Manage employees and assign tasks |
 | 👨‍💻 **Employee** | View and manage assigned tasks    |
 
 ---
 
-# 📋 Task Workflow
+# 📋 Task Management
 
-The task lifecycle follows a simple workflow:
+Each task contains important information required for effective task tracking.
 
-```text
-             📝 CREATE
-                 │
-                 ▼
-              📌 ASSIGN
-                 │
-                 ▼
-          🔵 IN PROGRESS
-                 │
-                 ▼
-             🟡 REVIEW
-                 │
-                 ▼
-           🟢 COMPLETED
-```
-
-If a task passes its deadline without completion:
-
-```text
-             ⏰ DEADLINE
-                 │
-                 ▼
-           🔴 OVERDUE
-```
-
----
-
-# 🎯 Task Information
-
-Each task can contain the following information:
-
-| Field                 | Description                                |
-| --------------------- | ------------------------------------------ |
-| 🆔 **Task ID**        | Unique task identifier                     |
-| 📌 **Title**          | Task name                                  |
-| 📝 **Description**    | Detailed task information                  |
-| 👨‍💼 **Assigned To** | Employee responsible for the task          |
-| 👤 **Created By**     | Manager/Admin who created the task         |
-| 🎯 **Priority**       | High / Medium / Low                        |
-| 📊 **Status**         | Pending / In Progress / Review / Completed |
-| 📅 **Start Date**     | Task starting date                         |
-| ⏰ **Due Date**        | Task deadline                              |
-| 📝 **Remarks**        | Additional task information                |
+| Field                       | Description                                |
+| --------------------------- | ------------------------------------------ |
+| 🆔 **Task ID**              | Unique task identifier                     |
+| 📌 **Title**                | Task name                                  |
+| 📝 **Description**          | Detailed task information                  |
+| 👨‍💼 **Assigned Employee** | Employee responsible for the task          |
+| 👤 **Created By**           | Manager/Admin who created the task         |
+| 🎯 **Priority**             | High / Medium / Low                        |
+| 📊 **Status**               | Pending / In Progress / Review / Completed |
+| 📅 **Start Date**           | Task starting date                         |
+| ⏰ **Due Date**              | Task deadline                              |
+| 📝 **Remarks**              | Additional information                     |
 
 ---
 
 # 📊 Dashboard
 
-The dashboard provides a quick overview of employee and task activity.
+The dashboard provides a centralized overview of employee and task activity.
+
+### Dashboard Metrics
 
 ```text
 ┌─────────────────────┐    ┌─────────────────────┐
 │ 👨‍💼 TOTAL EMPLOYEES │    │ 📋 TOTAL TASKS      │
-│         120         │    │         350         │
+│                     │    │                     │
+│        120          │    │        350          │
 └─────────────────────┘    └─────────────────────┘
 
 ┌─────────────────────┐    ┌─────────────────────┐
 │ ⏳ PENDING TASKS    │    │ 🔵 IN PROGRESS      │
-│          45         │    │          80         │
+│                     │    │                     │
+│         45          │    │         80          │
 └─────────────────────┘    └─────────────────────┘
 
 ┌─────────────────────┐    ┌─────────────────────┐
 │ 🟢 COMPLETED        │    │ 🔴 OVERDUE          │
-│         210         │    │          15         │
+│                     │    │                     │
+│        210          │    │         15          │
 └─────────────────────┘    └─────────────────────┘
 ```
 
@@ -392,41 +382,40 @@ The dashboard provides a quick overview of employee and task activity.
 
 # 🔌 REST API
 
-> Update the endpoints below according to your actual backend implementation.
+The React.js frontend communicates with the Spring Boot backend through RESTful APIs.
 
-## 👨‍💼 Employee API
+## 👨‍💼 Employee APIs
 
-|  Method  | Endpoint             | Description        |
-| :------: | -------------------- | ------------------ |
-|   `GET`  | `/api/employees`     | Get all employees  |
-|   `GET`  | `/api/employees/:id` | Get employee by ID |
-|  `POST`  | `/api/employees`     | Add new employee   |
-|   `PUT`  | `/api/employees/:id` | Update employee    |
-| `DELETE` | `/api/employees/:id` | Delete employee    |
+|  Method  | Endpoint              | Description        |
+| :------: | --------------------- | ------------------ |
+|   `GET`  | `/api/employees`      | Get all employees  |
+|   `GET`  | `/api/employees/{id}` | Get employee by ID |
+|  `POST`  | `/api/employees`      | Create employee    |
+|   `PUT`  | `/api/employees/{id}` | Update employee    |
+| `DELETE` | `/api/employees/{id}` | Delete employee    |
 
-## 📋 Task API
+## 📋 Task APIs
 
-|  Method  | Endpoint                | Description        |
-| :------: | ----------------------- | ------------------ |
-|   `GET`  | `/api/tasks`            | Get all tasks      |
-|   `GET`  | `/api/tasks/:id`        | Get task details   |
-|  `POST`  | `/api/tasks`            | Create a task      |
-|   `PUT`  | `/api/tasks/:id`        | Update a task      |
-| `DELETE` | `/api/tasks/:id`        | Delete a task      |
-|  `PATCH` | `/api/tasks/:id/status` | Update task status |
+|  Method  | Endpoint                 | Description        |
+| :------: | ------------------------ | ------------------ |
+|   `GET`  | `/api/tasks`             | Get all tasks      |
+|   `GET`  | `/api/tasks/{id}`        | Get task by ID     |
+|  `POST`  | `/api/tasks`             | Create task        |
+|   `PUT`  | `/api/tasks/{id}`        | Update task        |
+| `DELETE` | `/api/tasks/{id}`        | Delete task        |
+|  `PATCH` | `/api/tasks/{id}/status` | Update task status |
 
 ---
 
-# 📦 Example Task Object
+# 📦 Example Task Request
 
 ```json
 {
-  "taskId": "TASK001",
   "title": "Design Employee Dashboard",
-  "description": "Create a responsive dashboard for employee task management.",
-  "assignedTo": "EMP001",
-  "priority": "High",
-  "status": "In Progress",
+  "description": "Create a responsive employee management dashboard.",
+  "assignedTo": 1,
+  "priority": "HIGH",
+  "status": "IN_PROGRESS",
   "startDate": "2026-09-01",
   "dueDate": "2026-09-10"
 }
@@ -434,55 +423,270 @@ The dashboard provides a quick overview of employee and task activity.
 
 ---
 
+# 🗄️ Database Design
+
+The application uses **PostgreSQL** as the relational database.
+
+### Main Entities
+
+```text
+┌─────────────────┐
+│    EMPLOYEE     │
+├─────────────────┤
+│ id              │
+│ name            │
+│ email           │
+│ phone           │
+│ department      │
+│ designation     │
+│ joining_date    │
+└────────┬────────┘
+         │
+         │ 1
+         │
+         │ N
+         ▼
+┌─────────────────┐
+│      TASK       │
+├─────────────────┤
+│ id              │
+│ title           │
+│ description     │
+│ priority        │
+│ status          │
+│ start_date      │
+│ due_date        │
+│ employee_id     │
+└─────────────────┘
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## Prerequisites
+
+Make sure the following software is installed:
+
+* ☕ Java JDK 17+
+* 🌱 Spring Boot
+* 📦 Maven
+* ⚛️ Node.js
+* 📦 npm
+* 🐘 PostgreSQL
+* 💻 Git
+
+---
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/employee-task-management-system.git
+```
+
+```bash
+cd employee-task-management-system
+```
+
+---
+
+# 2️⃣ PostgreSQL Setup
+
+Create a PostgreSQL database:
+
+```sql
+CREATE DATABASE employee_task_management;
+```
+
+Update your Spring Boot configuration in:
+
+```text
+backend/src/main/resources/application.properties
+```
+
+Example:
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/employee_task_management
+spring.datasource.username=postgres
+spring.datasource.password=your_password
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+server.port=8080
+```
+
+> 🔒 Do not commit real database passwords to GitHub.
+
+---
+
+# 3️⃣ Start the Spring Boot Backend
+
+Navigate to the backend:
+
+```bash
+cd backend
+```
+
+Run the application:
+
+```bash
+./mvnw spring-boot:run
+```
+
+On Windows:
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+The backend will run on:
+
+```text
+http://localhost:8080
+```
+
+---
+
+# 4️⃣ Start the React Frontend
+
+Open another terminal and navigate to the frontend:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the React application:
+
+```bash
+npm start
+```
+
+Or, if your project uses Vite:
+
+```bash
+npm run dev
+```
+
+The frontend will normally run on:
+
+```text
+http://localhost:3000
+```
+
+or:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 🔗 Frontend & Backend Communication
+
+```text
+┌───────────────────────┐
+│       React.js        │
+│                       │
+│   http://localhost    │
+│       :3000           │
+└───────────┬───────────┘
+            │
+            │ REST API
+            │
+            ▼
+┌───────────────────────┐
+│     Spring Boot       │
+│                       │
+│   http://localhost    │
+│       :8080           │
+└───────────┬───────────┘
+            │
+            │ JPA / Hibernate
+            │
+            ▼
+┌───────────────────────┐
+│      PostgreSQL       │
+│                       │
+│        :5432          │
+└───────────────────────┘
+```
+
+---
+
 # 🔐 Security
 
-Security is an important part of the application.
+The application can implement secure authentication and authorization using Spring Security.
 
-The system can implement:
+Security considerations include:
 
-* 🔐 Secure authentication
-* 🔑 Password hashing
+* 🔐 User authentication
 * 🛡️ Role-based access control
-* 🔒 Protected API routes
+* 🔑 Password encryption
+* 🚫 Protected API endpoints
 * ✅ Input validation
-* 🚫 Unauthorized access prevention
-* 🔑 Secure environment variables
-* 🗄️ Database security
-* ⚠️ Proper error handling
+* 🔒 Secure database credentials
+* 🛡️ CORS configuration
+* ⚠️ Global exception handling
 
 ---
 
 # 🧪 Testing
 
-Run the test suite using:
+### Backend
+
+Run Spring Boot tests:
 
 ```bash
+cd backend
+./mvnw test
+```
+
+### Frontend
+
+Run React tests:
+
+```bash
+cd frontend
 npm test
 ```
 
-API endpoints can be tested using **Postman** or another API testing application.
+### API Testing
+
+REST APIs can be tested using:
+
+* Postman
+* Insomnia
+* Swagger/OpenAPI
 
 ---
 
-# 🚀 Future Enhancements
+# 📈 Future Enhancements
 
-Planned or possible future improvements include:
+The project can be extended with:
 
-* 📅 Attendance management
-* 🏖️ Leave management
-* 💰 Payroll management
-* 📈 Employee performance tracking
-* 💬 Task comments
-* 📎 File attachments
-* 🔔 Real-time notifications
-* 📧 Email reminders
-* 📊 Productivity analytics
-* 📥 Excel/PDF report generation
-* 📱 Mobile application
-* 🌙 Dark mode
-* 🔄 Real-time task updates
-* 📝 Activity and audit logs
-* 🤖 AI-powered task prioritization
+* 📅 Attendance Management
+* 🏖️ Leave Management
+* 💰 Payroll Management
+* 📈 Employee Performance Tracking
+* 💬 Task Comments
+* 📎 File Attachments
+* 🔔 Real-Time Notifications
+* 📧 Email Notifications
+* 📊 Productivity Analytics
+* 📥 Excel/PDF Reports
+* 📱 Mobile Application
+* 🌙 Dark Mode
+* 🔄 Real-Time Task Updates
+* 📝 Activity & Audit Logs
+* 🤖 AI-Powered Task Prioritization
 
 ---
 
@@ -490,35 +694,34 @@ Planned or possible future improvements include:
 
 Contributions are welcome! 🎉
 
-## Fork the Repository
+### 1. Fork the repository
 
-Fork the project and clone it to your local machine.
-
-## Create a Feature Branch
+### 2. Create a new branch
 
 ```bash
 git checkout -b feature/new-feature
 ```
 
-## Make Your Changes
+### 3. Make your changes
 
 Implement your feature or fix.
 
-## Commit Your Changes
+### 4. Commit your changes
 
 ```bash
+git add .
 git commit -m "feat: add new feature"
 ```
 
-## Push Your Branch
+### 5. Push your branch
 
 ```bash
 git push origin feature/new-feature
 ```
 
-## Create a Pull Request
+### 6. Create a Pull Request
 
-Open a Pull Request and describe your changes clearly.
+Open a Pull Request and provide a clear description of your changes.
 
 ---
 
@@ -534,9 +737,9 @@ This project is licensed under the **MIT License**.
 
 ## Your Name
 
-**Software Developer**
+**Full Stack Developer**
 
-Building useful and scalable software solutions.
+React.js • Spring Boot • PostgreSQL
 
 </p>
 
@@ -544,7 +747,7 @@ Building useful and scalable software solutions.
 
 # ⭐ Support
 
-If you find this project useful, consider giving it a ⭐ on GitHub.
+If you find this project useful, please consider giving it a ⭐ on GitHub.
 
 Your support and feedback are greatly appreciated! ❤️
 
@@ -556,6 +759,6 @@ Your support and feedback are greatly appreciated! ❤️
 
 ### **Plan. Assign. Track. Complete.**
 
-Made with ❤️ by **Your Name**
+Built with ❤️ using **React.js + Spring Boot + PostgreSQL**
 
 </p>
