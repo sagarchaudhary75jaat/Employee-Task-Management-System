@@ -1,547 +1,218 @@
-# 👨‍💼 Employee Task Management System
+# Employee Task Management System
 
-<p align="center">
-  <strong>🚀 Smart Task Management for Modern Teams</strong>
-</p>
+A full-stack Employee Task Management System built with **React, Spring Boot, Spring Security, JWT, and PostgreSQL**.
 
-<p align="center">
-  A modern web-based platform for managing employees, assigning tasks,
-  tracking progress, monitoring deadlines, and improving team productivity.
-</p>
+The application provides role-based authentication and allows administrators to manage employees and tasks, while employees can view and manage their assigned tasks.
 
----
+## 🚀 Features
 
-## 📌 About The Project
+### Authentication & Authorization
 
-**Employee Task Management System** is a full-stack web application developed using **React.js, Spring Boot, and PostgreSQL**.
+* User login using email and password
+* JWT-based authentication
+* Spring Security integration
+* Role-based access control
+* Separate access for Admin and Employee users
+* Protected frontend routes
+* Automatic JWT authentication for API requests
 
-The system provides a centralized platform for organizations to manage employees and their assigned tasks efficiently.
+### Employee Management
 
-Administrators and managers can create tasks, assign them to employees, set priorities and deadlines, and monitor task progress. Employees can view their assigned tasks and update their task status.
+* Add employees
+* View employees
+* Update employee information
+* Delete employees
+* Employee department and designation management
+* Employee role management
+* Employee task statistics
 
-### 🎯 Project Goal
+### Task Management
 
-> **Plan → Assign → Track → Complete → Improve**
+* Create tasks
+* Assign tasks to employees
+* View tasks
+* Update tasks
+* Delete tasks
+* Accept assigned tasks
+* Complete tasks
+* Mark tasks as failed
+* Track task status
+* Track task due dates
 
-The main objective of this project is to simplify task management, improve employee productivity, reduce manual work, and provide better visibility into organizational tasks.
+### Dashboard
 
----
-
-# ✨ Features
-
-<table>
-<tr>
-<td width="50%">
-
-### 👨‍💼 Employee Management
-
-* ➕ Add employees
-* ✏️ Update employee information
-* 👁️ View employee profiles
-* 🗑️ Delete employees
-* 🔎 Search employees
-* 🏢 Manage departments
-* 💼 Manage designations
-
-</td>
-
-<td width="50%">
-
-### 📋 Task Management
-
-* ➕ Create tasks
-* 📌 Assign tasks to employees
-* ✏️ Update tasks
-* 🗑️ Delete tasks
-* 👁️ View task details
-* 🔎 Search and filter tasks
-* 🔄 Update task status
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-### 🎯 Task Priority
-
-Tasks can be organized according to priority:
-
-* 🔴 **High**
-* 🟠 **Medium**
-* 🟢 **Low**
-
-</td>
-
-<td>
-
-### 📊 Task Status
-
-Track tasks through different stages:
-
-* ⚪ **Pending**
-* 🔵 **In Progress**
-* 🟡 **Review**
-* 🟢 **Completed**
-* 🔴 **Overdue**
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-### 📅 Deadline Management
-
-* Set task deadlines
-* Monitor upcoming deadlines
-* Identify overdue tasks
-* Track completion dates
-* Improve time management
-
-</td>
-
-<td>
-
-### 📈 Dashboard
-
-Get a quick overview of:
-
-* 👨‍💼 Total employees
-* 📋 Total tasks
-* ⏳ Pending tasks
-* 🔵 In-progress tasks
-* 🟢 Completed tasks
-* 🔴 Overdue tasks
-
-</td>
-</tr>
-</table>
+* Admin dashboard
+* Employee dashboard
+* Employee task statistics
+* Task status information
+* Task management interface
 
 ---
 
-# 🖥️ Application Screenshots
+## 🛠️ Technology Stack
 
-> 📸 Add your actual screenshots to the `screenshots` folder.
+### Frontend
 
-### 📊 Dashboard
+* React
+* Vite
+* React Router
+* Axios
+* JavaScript
+* CSS
 
-<p align="center">
-  <img src="screenshots/dashboard.png" width="90%" alt="Employee Task Management Dashboard">
-</p>
+### Backend
 
-### 📋 Task Management
+* Java 21
+* Spring Boot
+* Spring Web
+* Spring Data JPA
+* Spring Security
+* JWT
+* Bean Validation
+* Lombok
+* Maven
 
-<p align="center">
-  <img src="screenshots/tasks.png" width="90%" alt="Task Management">
-</p>
+### Database
 
-### 👨‍💼 Employee Management
-
-<p align="center">
-  <img src="screenshots/employees.png" width="90%" alt="Employee Management">
-</p>
-
-### 📝 Task Details
-
-<p align="center">
-  <img src="screenshots/task-details.png" width="90%" alt="Task Details">
-</p>
-
----
-
-# 🛠️ Technology Stack
-
-## 🎨 Frontend
-
-<p align="left">
-  <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-</p>
-
-### Frontend Technologies
-
-* **React.js** — Component-based UI development
-* **JavaScript** — Application logic
-* **HTML5** — Page structure
-* **CSS3** — Styling and responsive design
-* **Axios** — API communication
+* PostgreSQL
 
 ---
 
-## ⚙️ Backend
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
-  <img src="https://img.shields.io/badge/Spring%20Data%20JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Data JPA">
-</p>
-
-### Backend Technologies
-
-* **Java**
-* **Spring Boot**
-* **Spring Web / REST API**
-* **Spring Data JPA**
-* **Hibernate**
-* **Maven**
-
----
-
-## 🗄️ Database
-
-<p align="left">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-</p>
-
-### Database Technologies
-
-* **PostgreSQL**
-* Relational database design
-* SQL
-* JPA/Hibernate ORM
-
----
-
-# 🏗️ System Architecture
+## 📁 Project Structure
 
 ```text
-                         👤 USER
-                           │
-                           ▼
-                ┌────────────────────┐
-                │    ⚛️ REACT.JS     │
-                │     FRONTEND       │
-                └─────────┬──────────┘
-                          │
-                          │ REST API
-                          │ HTTP / JSON
-                          ▼
-                ┌────────────────────┐
-                │  🌱 SPRING BOOT    │
-                │      BACKEND       │
-                ├────────────────────┤
-                │  REST Controllers  │
-                │  Services          │
-                │  Repositories      │
-                │  JPA / Hibernate   │
-                └─────────┬──────────┘
-                          │
-                          │ SQL
-                          ▼
-                ┌────────────────────┐
-                │ 🐘 POSTGRESQL      │
-                │     DATABASE       │
-                └────────────────────┘
-```
-
----
-
-# 📂 Project Structure
-
-```text
-employee-task-management-system/
+Employee-Task-Management-System/
 │
-├── 📁 frontend/
-│   ├── 📁 public/
-│   └── 📁 src/
-│       ├── 📁 components/
-│       ├── 📁 pages/
-│       ├── 📁 services/
-│       ├── 📁 hooks/
-│       ├── 📁 assets/
-│       ├── 📄 App.jsx
-│       └── 📄 main.jsx
-│
-├── 📁 backend/
-│   ├── 📁 src/
-│   │   ├── 📁 main/
-│   │   │   ├── 📁 java/
-│   │   │   │   └── 📁 com/example/
-│   │   │   │       ├── 📁 controller/
-│   │   │   │       ├── 📁 service/
-│   │   │   │       ├── 📁 repository/
-│   │   │   │       ├── 📁 entity/
-│   │   │   │       ├── 📁 dto/
-│   │   │   │       └── 📄 Application.java
-│   │   │   │
-│   │   │   └── 📁 resources/
-│   │   │       └── 📄 application.properties
+├── Employee-frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── ProtectedRoute.jsx
 │   │   │
-│   │   └── 📁 test/
+│   │   ├── pages/
+│   │   │   ├── AdminDashboard.jsx
+│   │   │   ├── EmployeeDashboard.jsx
+│   │   │   ├── Employees.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── Tasks.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
 │   │
-│   └── 📄 pom.xml
+│   ├── package.json
+│   └── vite.config.js
 │
-├── 📁 screenshots/
-│   ├── dashboard.png
-│   ├── tasks.png
-│   ├── employees.png
-│   └── task-details.png
+├── Employee-backend/
+│   └── demo/
+│       ├── src/
+│       │   ├── main/
+│       │   │   ├── java/
+│       │   │   │   └── com/example/employeemanagement/
+│       │   │   │       ├── config/
+│       │   │   │       ├── controller/
+│       │   │   │       ├── dto/
+│       │   │   │       ├── entity/
+│       │   │   │       ├── repository/
+│       │   │   │       ├── security/
+│       │   │   │       └── service/
+│       │   │   │
+│       │   │   └── resources/
+│       │   │       └── application.properties
+│       │   │
+│       │   └── test/
+│       │
+│       ├── pom.xml
+│       ├── mvnw
+│       └── mvnw.cmd
 │
-├── 📄 .gitignore
-└── 📄 README.md
+└── README.md
 ```
 
 ---
 
-# 🔄 Application Workflow
+## ⚙️ Requirements
 
-```text
-             👤 LOGIN
-                │
-                ▼
-        ┌───────────────┐
-        │  📊 DASHBOARD │
-        └───────┬───────┘
-                │
-       ┌────────┴────────┐
-       │                 │
-       ▼                 ▼
- 👨‍💼 EMPLOYEES       📋 TASKS
-       │                 │
-       │                 ▼
-       │          📝 CREATE TASK
-       │                 │
-       │                 ▼
-       │           📌 ASSIGN TASK
-       │                 │
-       │                 ▼
-       │          🔵 IN PROGRESS
-       │                 │
-       │                 ▼
-       │            🟡 REVIEW
-       │                 │
-       │                 ▼
-       │           🟢 COMPLETED
-       │
-       ▼
-  👤 EMPLOYEE
-     PROFILE
-```
+Before running the application, make sure you have installed:
+
+* Java 21
+* Node.js
+* npm
+* PostgreSQL
+* Git
 
 ---
 
-# 👥 User Roles
-
-|        Role        | Permissions                       |
-| :----------------: | --------------------------------- |
-|    👑 **Admin**    | Full system access                |
-|  🧑‍💼 **Manager** | Manage employees and assign tasks |
-| 👨‍💻 **Employee** | View and manage assigned tasks    |
-
----
-
-# 📋 Task Management
-
-Each task contains important information required for effective task tracking.
-
-| Field                       | Description                                |
-| --------------------------- | ------------------------------------------ |
-| 🆔 **Task ID**              | Unique task identifier                     |
-| 📌 **Title**                | Task name                                  |
-| 📝 **Description**          | Detailed task information                  |
-| 👨‍💼 **Assigned Employee** | Employee responsible for the task          |
-| 👤 **Created By**           | Manager/Admin who created the task         |
-| 🎯 **Priority**             | High / Medium / Low                        |
-| 📊 **Status**               | Pending / In Progress / Review / Completed |
-| 📅 **Start Date**           | Task starting date                         |
-| ⏰ **Due Date**              | Task deadline                              |
-| 📝 **Remarks**              | Additional information                     |
-
----
-
-# 📊 Dashboard
-
-The dashboard provides a centralized overview of employee and task activity.
-
-### Dashboard Metrics
-
-```text
-┌─────────────────────┐    ┌─────────────────────┐
-│ 👨‍💼 TOTAL EMPLOYEES │    │ 📋 TOTAL TASKS      │
-│                     │    │                     │
-│        120          │    │        350          │
-└─────────────────────┘    └─────────────────────┘
-
-┌─────────────────────┐    ┌─────────────────────┐
-│ ⏳ PENDING TASKS    │    │ 🔵 IN PROGRESS      │
-│                     │    │                     │
-│         45          │    │         80          │
-└─────────────────────┘    └─────────────────────┘
-
-┌─────────────────────┐    ┌─────────────────────┐
-│ 🟢 COMPLETED        │    │ 🔴 OVERDUE          │
-│                     │    │                     │
-│        210          │    │         15          │
-└─────────────────────┘    └─────────────────────┘
-```
-
----
-
-# 🔌 REST API
-
-The React.js frontend communicates with the Spring Boot backend through RESTful APIs.
-
-## 👨‍💼 Employee APIs
-
-|  Method  | Endpoint              | Description        |
-| :------: | --------------------- | ------------------ |
-|   `GET`  | `/api/employees`      | Get all employees  |
-|   `GET`  | `/api/employees/{id}` | Get employee by ID |
-|  `POST`  | `/api/employees`      | Create employee    |
-|   `PUT`  | `/api/employees/{id}` | Update employee    |
-| `DELETE` | `/api/employees/{id}` | Delete employee    |
-
-## 📋 Task APIs
-
-|  Method  | Endpoint                 | Description        |
-| :------: | ------------------------ | ------------------ |
-|   `GET`  | `/api/tasks`             | Get all tasks      |
-|   `GET`  | `/api/tasks/{id}`        | Get task by ID     |
-|  `POST`  | `/api/tasks`             | Create task        |
-|   `PUT`  | `/api/tasks/{id}`        | Update task        |
-| `DELETE` | `/api/tasks/{id}`        | Delete task        |
-|  `PATCH` | `/api/tasks/{id}/status` | Update task status |
-
----
-
-# 📦 Example Task Request
-
-```json
-{
-  "title": "Design Employee Dashboard",
-  "description": "Create a responsive employee management dashboard.",
-  "assignedTo": 1,
-  "priority": "HIGH",
-  "status": "IN_PROGRESS",
-  "startDate": "2026-09-01",
-  "dueDate": "2026-09-10"
-}
-```
-
----
-
-# 🗄️ Database Design
-
-The application uses **PostgreSQL** as the relational database.
-
-### Main Entities
-
-```text
-┌─────────────────┐
-│    EMPLOYEE     │
-├─────────────────┤
-│ id              │
-│ name            │
-│ email           │
-│ phone           │
-│ department      │
-│ designation     │
-│ joining_date    │
-└────────┬────────┘
-         │
-         │ 1
-         │
-         │ N
-         ▼
-┌─────────────────┐
-│      TASK       │
-├─────────────────┤
-│ id              │
-│ title           │
-│ description     │
-│ priority        │
-│ status          │
-│ start_date      │
-│ due_date        │
-│ employee_id     │
-└─────────────────┘
-```
-
----
-
-# ⚙️ Installation & Setup
-
-## Prerequisites
-
-Make sure the following software is installed:
-
-* ☕ Java JDK 17+
-* 🌱 Spring Boot
-* 📦 Maven
-* ⚛️ Node.js
-* 📦 npm
-* 🐘 PostgreSQL
-* 💻 Git
-
----
-
-## 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/employee-task-management-system.git
-```
-
-```bash
-cd employee-task-management-system
-```
-
----
-
-# 2️⃣ PostgreSQL Setup
+# 🗄️ Database Setup
 
 Create a PostgreSQL database:
 
 ```sql
-CREATE DATABASE employee_task_management;
+CREATE DATABASE employee_management;
 ```
 
-Update your Spring Boot configuration in:
+Configure your database connection in:
 
 ```text
-backend/src/main/resources/application.properties
+Employee-backend/demo/src/main/resources/application.properties
 ```
 
 Example:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/employee_task_management
-spring.datasource.username=postgres
-spring.datasource.password=your_password
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-
-server.port=8080
+spring.datasource.url=jdbc:postgresql://localhost:5432/employee_management
+spring.datasource.username=YOUR_DATABASE_USERNAME
+spring.datasource.password=YOUR_DATABASE_PASSWORD
 ```
 
-> 🔒 Do not commit real database passwords to GitHub.
+Do not commit real database passwords or other sensitive credentials to GitHub.
 
 ---
 
-# 3️⃣ Start the Spring Boot Backend
+# 🔐 JWT Configuration
 
-Navigate to the backend:
+The backend uses JWT for authentication.
 
-```bash
-cd backend
+For local development, configure your JWT secret through an environment variable rather than committing the secret to GitHub.
+
+Example:
+
+```properties
+jwt.secret=${JWT_SECRET}
 ```
 
-Run the application:
+Set the environment variable before starting the backend.
+
+---
+
+# ▶️ Running the Backend
+
+Open a terminal and navigate to:
 
 ```bash
-./mvnw spring-boot:run
+cd Employee-backend/demo
 ```
 
-On Windows:
+Run the Spring Boot application using Maven:
+
+### Windows
 
 ```bash
 mvnw.cmd spring-boot:run
 ```
 
-The backend will run on:
+### Linux / macOS
+
+```bash
+./mvnw spring-boot:run
+```
+
+The backend runs on:
 
 ```text
 http://localhost:8080
@@ -549,12 +220,12 @@ http://localhost:8080
 
 ---
 
-# 4️⃣ Start the React Frontend
+# ▶️ Running the Frontend
 
-Open another terminal and navigate to the frontend:
+Open another terminal:
 
 ```bash
-cd frontend
+cd Employee-frontend
 ```
 
 Install dependencies:
@@ -563,25 +234,13 @@ Install dependencies:
 npm install
 ```
 
-Start the React application:
-
-```bash
-npm start
-```
-
-Or, if your project uses Vite:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The frontend will normally run on:
-
-```text
-http://localhost:3000
-```
-
-or:
+Vite will display the local frontend URL in the terminal, normally:
 
 ```text
 http://localhost:5173
@@ -589,176 +248,241 @@ http://localhost:5173
 
 ---
 
-# 🔗 Frontend & Backend Communication
+# 🔄 Application Flow
 
 ```text
-┌───────────────────────┐
-│       React.js        │
-│                       │
-│   http://localhost    │
-│       :3000           │
-└───────────┬───────────┘
-            │
-            │ REST API
-            │
-            ▼
-┌───────────────────────┐
-│     Spring Boot       │
-│                       │
-│   http://localhost    │
-│       :8080           │
-└───────────┬───────────┘
-            │
-            │ JPA / Hibernate
-            │
-            ▼
-┌───────────────────────┐
-│      PostgreSQL       │
-│                       │
-│        :5432          │
-└───────────────────────┘
+                   ┌──────────────────┐
+                   │     React UI     │
+                   │     Frontend     │
+                   └────────┬─────────┘
+                            │
+                         Axios
+                            │
+                            ▼
+                   ┌──────────────────┐
+                   │   Spring Boot    │
+                   │      REST API    │
+                   └────────┬─────────┘
+                            │
+                    Spring Security
+                            │
+                         JWT
+                            │
+                            ▼
+                   ┌──────────────────┐
+                   │   PostgreSQL     │
+                   │     Database     │
+                   └──────────────────┘
 ```
 
 ---
 
-# 🔐 Security
+# 🔑 Authentication Flow
 
-The application can implement secure authentication and authorization using Spring Security.
-
-Security considerations include:
-
-* 🔐 User authentication
-* 🛡️ Role-based access control
-* 🔑 Password encryption
-* 🚫 Protected API endpoints
-* ✅ Input validation
-* 🔒 Secure database credentials
-* 🛡️ CORS configuration
-* ⚠️ Global exception handling
+```text
+User
+ │
+ ▼
+Login Page
+ │
+ ▼
+POST /api/auth/login
+ │
+ ▼
+Spring Security
+ │
+ ▼
+Authentication
+ │
+ ▼
+JWT Token
+ │
+ ▼
+Frontend stores authentication information
+ │
+ ▼
+Axios sends JWT with API requests
+ │
+ ▼
+JWT Filter validates request
+ │
+ ▼
+Protected API
+```
 
 ---
 
-# 🧪 Testing
+# 👥 User Roles
 
-### Backend
+## Admin
 
-Run Spring Boot tests:
+Administrators can:
 
-```bash
-cd backend
-./mvnw test
+* Access the admin dashboard
+* Manage employees
+* Create tasks
+* Assign tasks
+* Update tasks
+* Delete tasks
+* Monitor employee task information
+
+## Employee
+
+Employees can:
+
+* Access their employee dashboard
+* View assigned tasks
+* Accept assigned tasks
+* Complete tasks
+* Mark tasks as failed
+* View their task information
+
+---
+
+# 📋 Task Workflow
+
+The current task workflow is based on the application's implemented status handling:
+
+```text
+PENDING
+   │
+   ▼
+ ACTIVE
+  /   \
+ ▼     ▼
+COMPLETED
+       
+or
+
+ACTIVE
+   │
+   ▼
+FAILED
 ```
+
+Employees can only perform task actions permitted by the application's authorization and task-state rules.
+
+---
+
+# 🔌 Main Backend Components
+
+### Controllers
+
+The backend contains controllers responsible for:
+
+* Authentication
+* Employee management
+* Task management
+
+### Services
+
+Service classes contain reusable application/business logic.
+
+### Repositories
+
+Spring Data JPA repositories provide database access.
+
+### Entities
+
+The application currently contains domain entities for employees and tasks.
+
+### Security
+
+Spring Security and JWT provide:
+
+* Authentication
+* Authorization
+* Protected endpoints
+* Role-based access
+
+---
+
+# 🌐 Frontend Pages
+
+The React application contains pages for:
+
+* Login
+* Admin Dashboard
+* Employee Dashboard
+* Employee Management
+* Task Management
+
+Protected routes prevent unauthorized users from accessing restricted pages.
+
+---
+
+# 🧪 Build
 
 ### Frontend
 
-Run React tests:
-
 ```bash
-cd frontend
-npm test
+npm run build
 ```
 
-### API Testing
+### Backend
 
-REST APIs can be tested using:
-
-* Postman
-* Insomnia
-* Swagger/OpenAPI
+```bash
+mvnw.cmd clean package
+```
 
 ---
 
-# 📈 Future Enhancements
+# 🔒 Security Notes
 
-The project can be extended with:
+This project uses:
 
-* 📅 Attendance Management
-* 🏖️ Leave Management
-* 💰 Payroll Management
-* 📈 Employee Performance Tracking
-* 💬 Task Comments
-* 📎 File Attachments
-* 🔔 Real-Time Notifications
-* 📧 Email Notifications
-* 📊 Productivity Analytics
-* 📥 Excel/PDF Reports
-* 📱 Mobile Application
-* 🌙 Dark Mode
-* 🔄 Real-Time Task Updates
-* 📝 Activity & Audit Logs
-* 🤖 AI-Powered Task Prioritization
+* Spring Security
+* JWT authentication
+* BCrypt password hashing
+* Role-based authorization
+* Protected API endpoints
+* Employee task ownership checks
 
----
+For production deployment, sensitive values such as:
 
-# 🤝 Contributing
+* JWT secrets
+* Database passwords
+* API keys
 
-Contributions are welcome! 🎉
-
-### 1. Fork the repository
-
-### 2. Create a new branch
-
-```bash
-git checkout -b feature/new-feature
-```
-
-### 3. Make your changes
-
-Implement your feature or fix.
-
-### 4. Commit your changes
-
-```bash
-git add .
-git commit -m "feat: add new feature"
-```
-
-### 5. Push your branch
-
-```bash
-git push origin feature/new-feature
-```
-
-### 6. Create a Pull Request
-
-Open a Pull Request and provide a clear description of your changes.
+should be provided through environment variables or a secure secrets-management system.
 
 ---
 
-# 📜 License
+# 🚀 Future Improvements
 
-This project is licensed under the **MIT License**.
+Possible improvements include:
+
+* Add comprehensive unit and integration tests
+* Add Swagger/OpenAPI documentation
+* Improve global exception handling
+* Add pagination and filtering
+* Add task priorities
+* Add task search
+* Add email notifications
+* Add Docker support
+* Add CI/CD with GitHub Actions
+* Deploy frontend and backend
+* Improve dashboard analytics
+* Add automated database migrations
+* Improve application logging and monitoring
 
 ---
 
 # 👨‍💻 Author
 
-<p align="center">
+**Sagar Chaudhary**
 
-## Your Name
+Full Stack Developer
 
-**Full Stack Developer**
+GitHub:
 
-React.js • Spring Boot • PostgreSQL
-
-</p>
+https://github.com/sagarchaudhary75jaat
 
 ---
 
-# ⭐ Support
+# ⭐ Project
 
-If you find this project useful, please consider giving it a ⭐ on GitHub.
+If you find this project useful, consider giving the repository a star.
 
-Your support and feedback are greatly appreciated! ❤️
-
----
-
-<p align="center">
-
-## 🚀 Employee Task Management System
-
-### **Plan. Assign. Track. Complete.**
-
-Built with ❤️ using **React.js + Spring Boot + PostgreSQL**
-
-</p>
+**Employee Task Management System**
+React + Spring Boot + PostgreSQL
